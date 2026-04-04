@@ -1,27 +1,54 @@
 <!doctype html>
 <html lang="sv">
   <head>
-    <!-- Metadata och sidans titel -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ahmed Nebi | Javautvecklare</title>
 
-    <!-- Länkar till din CSS-fil -->
+    <!-- SEO -->
+    <meta name="author" content="Ahmed Nebi" />
+    <meta
+      name="description"
+      content="Ahmed Nebi – Backend‑utvecklare inom Java och Spring Boot. Bygger skalbara REST‑API:er och utvecklar mobilapplikationer i Flutter."
+    />
+
+    <!-- Open Graph (LinkedIn / Facebook preview) -->
+    <meta
+      property="og:title"
+      content="Ahmed Nebi | Backend & Mobilutvecklare"
+    />
+    <meta
+      property="og:description"
+      content="Backend‑utvecklare inom Java och Spring Boot med erfarenhet av Flutter."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://surchii.github.io/portfolio/" />
+
+    <title>Ahmed Nebi | Backend & Mobilutvecklare</title>
+    <meta
+      property="og:image"
+      content="https://surchii.github.io/portfolio/assets/preview.png"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
   </head>
+
   <body>
     <!-- ================= NAVBAR ================= -->
     <header class="navbar">
       <div class="container">
         <h1 class="logo">Ahmed Nebi</h1>
-        <nav>
+
+        <div class="nav-right">
           <ul class="nav-links">
             <li><a href="#about">Om mig</a></li>
             <li><a href="#skills">Teknik</a></li>
             <li><a href="#projects">Projekt</a></li>
+            <li><a href="#experience">Erfarenhet</a></li>
             <li><a href="#contact">Kontakt</a></li>
           </ul>
-        </nav>
+
+          <button id="theme-toggle" class="theme-btn">🌙</button>
+        </div>
       </div>
     </header>
 
@@ -29,17 +56,19 @@
     <section class="hero">
       <div class="container hero-content">
         <div class="hero-text">
-          <h2>Backend‑utvecklare med fokus på Java och moderna system</h2>
+          <h2>Backend‑utvecklare inom Java & Spring Boot</h2>
           <p>
-            Jag utvecklar skalbara backend‑lösningar i Spring Boot och bygger
-            kompletta applikationer med React och Flutter.
+            Jag bygger skalbara backend‑system och REST‑API:er i Spring Boot
+            samt utvecklar mobilapplikationer i Flutter med
+            fullstack‑integration. Fokus på ren arkitektur, prestanda och
+            hållbar kod.
           </p>
-
           <div class="hero-buttons">
             <a href="#projects" class="btn">Se mina projekt</a>
             <a
               href="https://github.com/surchii"
               target="_blank"
+              rel="noopener noreferrer"
               class="btn secondary"
             >
               GitHub
@@ -54,9 +83,11 @@
       <div class="container">
         <h2>Om mig</h2>
         <p>
-          Systemutvecklare med två års YH‑utbildning inom Java. Specialiserad på
-          backend‑utveckling, REST‑API:er och databasintegration. Har även
-          erfarenhet av mobilutveckling i Flutter samt frontend i React.
+          Systemutvecklare med YH‑utbildning inom Java och specialisering i
+          backend‑utveckling. Arbetar med Spring Boot, REST‑API:er och
+          databasintegration samt utvecklar mobilapplikationer i Flutter. Van
+          att arbeta med lagerindelad arkitektur, DTO‑mappning, validering och
+          PostgreSQL/MySQL.
         </p>
       </div>
     </section>
@@ -65,7 +96,6 @@
     <section id="skills" class="section dark">
       <div class="container">
         <h2>Teknisk profil</h2>
-
         <div class="skills-grid">
           <div>
             <h3>Backend</h3>
@@ -106,7 +136,7 @@
         <h2>Utvalda projekt</h2>
 
         <div class="projects-grid">
-          <!-- FEATURED PROJECT -->
+          <!-- ===== FEATURED PROJECT ===== -->
           <div class="project-card featured">
             <h3>🌟 TinySteps</h3>
             <p class="project-meta">Backend Developer • Pågående projekt</p>
@@ -119,24 +149,31 @@
             </div>
 
             <p>
-              Backend för en applikation som hjälper användare bryta ner större
-              mål i mindre steg. Byggd med tydlig lagerindelning och fokus på
-              skalbarhet och kodkvalitet.
+              Fullständig backend‑lösning byggd i Spring Boot med lagerindelad
+              arkitektur. Designad för skalbarhet, tydlig separation av ansvar
+              och enkel vidareutveckling.
             </p>
 
             <ul class="project-details">
-              <li>Controller → Service → Repository‑struktur</li>
-              <li>DTO‑mappning mellan lager</li>
-              <li>@ControllerAdvice för global exception handling</li>
-              <li>Bean Validation för säker input‑hantering</li>
+              <li>Lagerstruktur: Controller → Service → Repository</li>
+              <li>DTO‑mappning och validering</li>
+              <li>Global exception handling</li>
+              <li>PostgreSQL med JPA/Hibernate</li>
             </ul>
 
             <div class="project-links">
-              <a href="#" target="_blank" class="btn small">GitHub</a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn small"
+              >
+                GitHub
+              </a>
             </div>
           </div>
 
-          <!-- SECOND PROJECT -->
+          <!-- ===== SECOND PROJECT ===== -->
           <div class="project-card">
             <h3>Task Manager API</h3>
 
@@ -147,12 +184,41 @@
             </div>
 
             <p>
-              REST‑API med CRUD‑funktionalitet och relationsdatabas. Fokus på
-              ren arkitektur, validering och strukturerad kod.
+              REST‑API med CRUD‑funktionalitet och relationsdatabas.
+              Implementerar validering, service‑lager och strukturerad
+              arkitektur enligt best practice.
             </p>
 
             <div class="project-links">
-              <a href="#" target="_blank" class="btn small">GitHub</a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn small"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- ===== THIRD PROJECT ===== -->
+          <div class="project-card upcoming">
+            <h3>🚧 Mobilapplikation i Flutter</h3>
+
+            <div class="tech-stack">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>REST API</span>
+            </div>
+
+            <p>
+              Mobilapplikation utvecklad i Flutter med fokus på användarvänlig
+              design och integration mot backend via REST‑API. Projektet visar
+              samverkan mellan mobil frontend och backend‑system.
+            </p>
+
+            <div class="project-links">
+              <a href="#" class="btn small">Mer info snart</a>
             </div>
           </div>
         </div>
@@ -163,10 +229,29 @@
     <section id="experience" class="section dark">
       <div class="container">
         <h2>Erfarenhet</h2>
+
+        <div class="experience-box">
+          <h3>Systemutvecklare</h3>
+          <p class="experience-meta">Java • Spring Boot • REST API</p>
+          <p>
+            Arbetar med utveckling och vidareutveckling av backend‑system.
+            Implementerar REST‑API:er, hanterar databasintegration och
+            förbättrar systemarkitektur med fokus på struktur, prestanda och
+            kodkvalitet.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VAD JAG SÖKER ================= -->
+    <section class="section">
+      <div class="container">
+        <h2>Professionellt fokus</h2>
         <p>
-          Arbetar med utveckling och vidareutveckling av backend‑system i Java
-          och Spring Boot. Implementerar REST‑API:er, hanterar
-          databasintegration och förbättrar befintlig systemarkitektur.
+          Intresserad av backend‑ och fullstackroller där jag får arbeta med
+          Java, Spring Boot och moderna systemarkitekturer. Motiveras av
+          API‑design, skalbara lösningar och integration mellan backend och
+          mobila applikationer.
         </p>
       </div>
     </section>
@@ -176,19 +261,39 @@
       <div class="container">
         <h2>Kontakt</h2>
 
-        <p>
-          📧 <a href="mailto:dinmail@mail.com">dinmail@mail.com</a><br />
-          💼
-          <a href="https://linkedin.com/in/dittnamn" target="_blank">LinkedIn</a
-          ><br />
-          💻 <a href="https://github.com/surchii" target="_blank">GitHub</a>
-        </p>
+        <div class="contact-links">
+          <a href="mailto:ahmed.nebi@hotmail.com" class="contact-item">
+            📧 ahmed.nebi@hotmail.com
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ahmed-nebi-3b9061134/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-item"
+          >
+            💼 LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/surchii"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-item"
+          >
+            💻 GitHub
+          </a>
+        </div>
       </div>
     </section>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
       <div class="container">
-        <p>© 2026 Ahmed Nebi</p>
+        <p>
+          © 2026 Ahmed Nebi —
+          <span class="footer-tagline"> Built with Java & Flutter </span>
+        </p>
       </div>
     </footer>
 
