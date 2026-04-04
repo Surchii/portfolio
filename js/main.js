@@ -1,24 +1,23 @@
-console.log("Portfolio loaded");
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
 
-const about = document.getElementById("about");
-const skills = document.getElementById("skills");
-const projects = document.getElementById("projects");
-const contact = document.getElementById("contact");
+window.addEventListener("scroll", () => {
+  let current = "";
 
-about.addEventListener("click", () => {
-  window.location.href = "#about";
-});
-skills.addEventListener("click", () => {
-  window.location.href = "#skills";
-});
-projects.addEventListener("click", () => {
-  window.location.href = "#projects";
-});
-contact.addEventListener("click", () => {
-  window.location.href = "#contact";
-});
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
 
-// const about = document.getElementById("about");
-// const skills = document.getElementById("skills");
-// const projects = document.getElementById("projects");
-// const contact = document.getElementById("contact");
+    if (window.scrollY >= sectionTop - 200) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});

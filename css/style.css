@@ -21,33 +21,13 @@ body {
   margin: auto;
 }
 
-.navbar {
-  background: #111827;
-  padding: 1rem 0;
-}
-
 .logo {
-  color: #38bdf8;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: #f1f5f9;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
   color: #38bdf8;
 }
 
 .hero {
   padding: 120px 0;
+  background: radial-gradient(circle at top, #1e293b, #0f172a);
 }
 
 .hero-content {
@@ -190,4 +170,45 @@ footer {
 
 .featured-text p {
   margin-bottom: 15px;
+}
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.section p {
+  max-width: 700px;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(17, 24, 39, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links a {
+  color: #f1f5f9;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: #1f2937;
+  color: #38bdf8;
+}
+
+.nav-links a.active {
+  background: #1f2937;
+  color: #38bdf8;
 }
