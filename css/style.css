@@ -173,3 +173,21 @@ footer {
   padding: 8px 16px;
   font-size: 0.85rem;
 }
+.featured {
+  border: 1px solid #38bdf8;
+  background: linear-gradient(145deg, #1f2937, #111827);
+}
+
+.featured h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.featured-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-text p {
+  margin-bottom: 15px;
+}
