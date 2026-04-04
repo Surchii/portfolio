@@ -9,18 +9,13 @@
     <!-- Länkar till din CSS-fil -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
     <!-- ================= NAVBAR ================= -->
-    <!-- Navigationen högst upp på sidan -->
-    <!-- Innehåller ditt namn + länkar till sektioner -->
     <header class="navbar">
       <div class="container">
         <h1 class="logo">Ahmed Nebi</h1>
-
         <nav>
           <ul class="nav-links">
-            <!-- Dessa länkar scrollar till olika sektioner -->
             <li><a href="#about">Om mig</a></li>
             <li><a href="#skills">Teknik</a></li>
             <li><a href="#projects">Projekt</a></li>
@@ -30,24 +25,18 @@
       </div>
     </header>
 
-    <!-- ================= HERO SECTION ================= -->
-    <!-- Första intrycket när någon öppnar sidan -->
-    <!-- Här beskriver du kort vem du är -->
+    <!-- ================= HERO ================= -->
     <section class="hero">
       <div class="container hero-content">
         <div class="hero-text">
-          <h2>Javautvecklare specialiserad på backend och API-arkitektur</h2>
-
+          <h2>Backend‑utvecklare med fokus på Java och moderna system</h2>
           <p>
-            Jag utvecklar robusta och skalbara system med Java och Spring Boot.
-            Fokus på ren kod, lagerindelad arkitektur och hållbara lösningar.
+            Jag utvecklar skalbara backend‑lösningar i Spring Boot och bygger
+            kompletta applikationer med React och Flutter.
           </p>
 
-          <!-- Knappar -->
           <div class="hero-buttons">
             <a href="#projects" class="btn">Se mina projekt</a>
-
-            <!-- Länk till GitHub -->
             <a
               href="https://github.com/surchii"
               target="_blank"
@@ -61,49 +50,47 @@
     </section>
 
     <!-- ================= OM MIG ================= -->
-    <!-- Kort professionell sammanfattning -->
     <section id="about" class="section">
       <div class="container">
         <h2>Om mig</h2>
-
         <p>
-          Jag är utbildad systemutvecklare med två års yrkesutbildning inom
-          Java. Jag utvecklar backend-system och REST API:er med fokus på ren
-          arkitektur.
+          Systemutvecklare med två års YH‑utbildning inom Java. Specialiserad på
+          backend‑utveckling, REST‑API:er och databasintegration. Har även
+          erfarenhet av mobilutveckling i Flutter samt frontend i React.
         </p>
       </div>
     </section>
 
-    <!-- ================= TEKNISK KOMPETENS ================= -->
-    <!-- Här listar du dina tekniska färdigheter -->
+    <!-- ================= TEKNISK PROFIL ================= -->
     <section id="skills" class="section dark">
       <div class="container">
-        <h2>Teknisk kompetens</h2>
+        <h2>Teknisk profil</h2>
 
         <div class="skills-grid">
-          <!-- Backend -->
           <div>
             <h3>Backend</h3>
             <ul>
               <li>Java</li>
               <li>Spring Boot</li>
               <li>REST API</li>
+              <li>JPA / Hibernate</li>
             </ul>
           </div>
 
-          <!-- Databaser -->
           <div>
-            <h3>Databaser</h3>
+            <h3>Frontend & Mobil</h3>
             <ul>
-              <li>MySQL</li>
+              <li>React</li>
+              <li>Flutter</li>
+              <li>Dart</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Databaser & Verktyg</h3>
+            <ul>
               <li>PostgreSQL</li>
-            </ul>
-          </div>
-
-          <!-- Verktyg -->
-          <div>
-            <h3>Verktyg</h3>
-            <ul>
+              <li>MySQL</li>
               <li>Git</li>
               <li>Maven</li>
               <li>Docker</li>
@@ -114,47 +101,42 @@
     </section>
 
     <!-- ================= PROJEKT ================= -->
-    <!-- Här visar du dina projekt -->
     <section id="projects" class="section">
       <div class="container">
-        <h2>Projekt</h2>
+        <h2>Utvalda projekt</h2>
 
-        <!-- Wrapper som gör grid-layout -->
         <div class="projects-grid">
-          <!-- ===== FEATURED PROJEKT ===== -->
-          <!-- Ditt huvudprojekt -->
+          <!-- FEATURED PROJECT -->
           <div class="project-card featured">
-            <div class="featured-content">
-              <div class="featured-text">
-                <h3>🌟 TinySteps</h3>
+            <h3>🌟 TinySteps</h3>
+            <p class="project-meta">Backend Developer • Pågående projekt</p>
 
-                <!-- Tekniker som badges -->
-                <div class="tech-stack">
-                  <span>Java</span>
-                  <span>Spring Boot</span>
-                  <span>PostgreSQL</span>
-                  <span>REST API</span>
-                </div>
+            <div class="tech-stack">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>PostgreSQL</span>
+              <span>REST API</span>
+            </div>
 
-                <p>
-                  TinySteps är en applikation för att hjälpa användare bryta ner
-                  större mål i mindre hanterbara steg.
-                </p>
+            <p>
+              Backend för en applikation som hjälper användare bryta ner större
+              mål i mindre steg. Byggd med tydlig lagerindelning och fokus på
+              skalbarhet och kodkvalitet.
+            </p>
 
-                <p>
-                  Backend är byggd med lagerindelad arkitektur (Controller →
-                  Service → Repository) med fokus på tydlig struktur, validering
-                  och skalbarhet.
-                </p>
+            <ul class="project-details">
+              <li>Controller → Service → Repository‑struktur</li>
+              <li>DTO‑mappning mellan lager</li>
+              <li>@ControllerAdvice för global exception handling</li>
+              <li>Bean Validation för säker input‑hantering</li>
+            </ul>
 
-                <div class="project-links">
-                  <a href="#" target="_blank" class="btn small">GitHub</a>
-                </div>
-              </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn small">GitHub</a>
             </div>
           </div>
 
-          <!-- ===== VANLIGT PROJEKT ===== -->
+          <!-- SECOND PROJECT -->
           <div class="project-card">
             <h3>Task Manager API</h3>
 
@@ -165,29 +147,8 @@
             </div>
 
             <p>
-              REST API för hantering av uppgifter med CRUD‑funktionalitet och
-              relationsdatabas.
-            </p>
-
-            <div class="project-links">
-              <a href="#" target="_blank" class="btn small">GitHub</a>
-            </div>
-          </div>
-
-          <!-- ===== TOM PROJEKT-MALL ===== -->
-          <!-- Kopiera detta block när du lägger till nya projekt -->
-          <div class="project-card">
-            <h3>Projektets namn</h3>
-
-            <div class="tech-stack">
-              <span>Java</span>
-              <span>Spring Boot</span>
-              <span>Databas</span>
-            </div>
-
-            <p>
-              Kort professionell beskrivning av projektet. Vad löser det? Vad
-              var syftet?
+              REST‑API med CRUD‑funktionalitet och relationsdatabas. Fokus på
+              ren arkitektur, validering och strukturerad kod.
             </p>
 
             <div class="project-links">
@@ -198,27 +159,39 @@
       </div>
     </section>
 
-    <!-- ================= KONTAKT ================= -->
-    <!-- Hur rekryterare når dig -->
-    <section id="contact" class="section dark">
+    <!-- ================= ERFARENHET ================= -->
+    <section id="experience" class="section dark">
       <div class="container">
-        <h2>Kontakt</h2>
-
-        <p>Email: dinmail@mail.com</p>
-        <p>LinkedIn: linkedin.com/in/dittnamn</p>
-        <p>GitHub: github.com/dittnamn</p>
+        <h2>Erfarenhet</h2>
+        <p>
+          Arbetar med utveckling och vidareutveckling av backend‑system i Java
+          och Spring Boot. Implementerar REST‑API:er, hanterar
+          databasintegration och förbättrar befintlig systemarkitektur.
+        </p>
       </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
-    <!-- Liten avslutande del längst ner -->
+    <!-- ================= KONTAKT ================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Kontakt</h2>
+
+        <p>
+          📧 <a href="mailto:dinmail@mail.com">dinmail@mail.com</a><br />
+          💼
+          <a href="https://linkedin.com/in/dittnamn" target="_blank">LinkedIn</a
+          ><br />
+          💻 <a href="https://github.com/surchii" target="_blank">GitHub</a>
+        </p>
+      </div>
+    </section>
+
     <footer>
       <div class="container">
         <p>© 2026 Ahmed Nebi</p>
       </div>
     </footer>
 
-    <!-- Länkar till din JavaScript-fil -->
     <script src="js/main.js"></script>
   </body>
 </html>
