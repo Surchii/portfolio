@@ -1,64 +1,64 @@
-// ================= NAV ACTIVE ON SCROLL =================
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-links a");
+// =========================
+// THEME TOGGLE
+// =========================
+const btn = document.getElementById("theme-btn");
 
-window.addEventListener("scroll", () => {
-  let current = "";
+const applyTheme = (isLight) => {
+  document.body.classList.toggle("light", isLight);
+  btn.textContent = isLight ? "🌞" : "🌙";
+};
 
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
+const saved = localStorage.getItem("theme");
+if (saved) {
+  applyTheme(saved === "light");
+} else {
+  applyTheme(window.matchMedia("(prefers-color-scheme: light)").matches);
+}
 
-    if (window.scrollY >= sectionTop - 200) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === "#" + current) {
-      link.classList.add("active");
-    }
-  });
+btn.addEventListener("click", () => {
+  const isLight = document.body.classList.toggle("light");
+  localStorage.setItem("theme", isLight ? "light" : "dark");
+  btn.textContent = isLight ? "🌞" : "🌙";
 });
 
-// ================= THEME TOGGLE =================
-const toggleBtn = document.getElementById("theme-toggle");
+// =========================
+// NAV ACTIVE ON SCROLL
+// =========================
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-links a");
 
-if (toggleBtn) {
-  const savedTheme = localStorage.getItem("theme");
+window.addEventListener(
+  "scroll",
+  () => {
+    let current = "";
+    sections.forEach((section) => {
+      if (window.scrollY >= section.offsetTop - 200) {
+        current = section.id;
+      }
+    });
+    navLinks.forEach((link) => {
+      link.classList.toggle(
+        "active",
+        link.getAttribute("href") === "#" + current,
+      );
+    });
+  },
+  { passive: true },
+);
 
-  // 1️⃣ Om användaren redan valt tema
-  if (savedTheme === "light") {
-    document.body.classList.add("light-mode");
-    toggleBtn.textContent = "🌞";
-  } else if (savedTheme === "dark") {
-    toggleBtn.textContent = "🌙";
-  }
+// =========================
+// SCROLL FADE IN
+// =========================
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.1 },
+);
 
-  // 2️⃣ Om inget sparat → följ systeminställning
-  if (!savedTheme) {
-    const prefersLight = window.matchMedia(
-      "(prefers-color-scheme: light)",
-    ).matches;
-    if (prefersLight) {
-      document.body.classList.add("light-mode");
-      toggleBtn.textContent = "🌞";
-    } else {
-      toggleBtn.textContent = "🌙";
-    }
-  }
-
-  // 3️⃣ Toggle klick
-  toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-
-    if (document.body.classList.contains("light-mode")) {
-      localStorage.setItem("theme", "light");
-      toggleBtn.textContent = "🌞";
-    } else {
-      localStorage.setItem("theme", "dark");
-      toggleBtn.textContent = "🌙";
-    }
-  });
-}
+document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
