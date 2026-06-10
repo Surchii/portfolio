@@ -6,21 +6,20 @@
     <meta name="author" content="Ahmed Nebi" />
     <meta
       name="description"
-      content="Ahmed Nebi – Backend-utvecklare inom Java och Spring Boot. Bygger skalbara REST-API:er och mobilapplikationer i Flutter."
+      content="Ahmed Nebi – Fullstack-utvecklare inom Java, Spring Boot, React och Flutter. Bygger skalbara REST-API:er, SaaS-plattformar och mobilapplikationer."
     />
     <meta
       name="keywords"
-      content="Java Developer, Spring Boot, Backend Developer, Flutter, REST API, Sweden"
+      content="Fullstack Developer, Java Developer, Spring Boot, React, TypeScript, Flutter, REST API, SaaS, Stockholm, Sweden"
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://surchii.github.io/portfolio/" />
-    <meta
-      property="og:title"
-      content="Ahmed Nebi | Backend & Mobilutvecklare"
-    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ahmed Nebi | Fullstack-utvecklare" />
     <meta
       property="og:description"
-      content="Backend-utvecklare inom Java och Spring Boot med erfarenhet av Flutter."
+      content="Fullstack-utvecklare inom Java, Spring Boot, React och Flutter. Bygger SaaS-plattformar och mobilappar."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://surchii.github.io/portfolio/" />
@@ -28,25 +27,31 @@
       property="og:image"
       content="https://surchii.github.io/portfolio/assets/preview.png"
     />
-    <title>Ahmed Nebi | Backend & Mobilutvecklare</title>
+
+    <title>Ahmed Nebi | Fullstack-utvecklare</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
   </head>
+
   <body>
     <!-- NAVBAR -->
     <nav>
       <div class="container inner">
-        <a href="#" class="logo">Ahmed Nebi</a>
-        <div style="display: flex; align-items: center; gap: 8px">
-          <ul class="nav-links">
+        <a href="#" class="logo">Ahmed<span>.dev</span></a>
+        <div class="nav-right">
+          <ul class="nav-links" id="nav-links">
             <li><a href="#about">Om mig</a></li>
             <li><a href="#skills">Teknik</a></li>
             <li><a href="#projects">Projekt</a></li>
             <li><a href="#experience">Erfarenhet</a></li>
+            <li><a href="#education">Utbildning</a></li>
             <li><a href="#contact">Kontakt</a></li>
           </ul>
-          <button id="theme-btn" class="theme-btn" aria-label="Toggle theme">
+          <button id="theme-btn" class="theme-btn" aria-label="Byt tema">
             🌙
+          </button>
+          <button id="menu-btn" class="menu-btn" aria-label="Öppna meny">
+            ☰
           </button>
         </div>
       </div>
@@ -55,19 +60,21 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container">
-        <div class="hero-badge">Open to work · Stockholm, Sverige</div>
+        <div class="hero-badge">✅ Open to work · Stockholm, Sverige</div>
         <h1>
-          Java / Spring Boot Developer<br /><span
-            >REST APIs & Produktionsnära System</span
-          >
+          Fullstack-utvecklare<br />
+          <span>Java · Spring Boot · React · Flutter</span>
         </h1>
         <p>
-          Backend- och systemutvecklare med erfarenhet av skalbara REST-API:er,
-          produktionsnära felsökning och mobilutveckling i Flutter. Fokus på
-          stabil arkitektur och långsiktig kodkvalitet.
+          Jag bygger kompletta applikationer från backend till mobil. Just nu
+          utvecklar jag två fullstack-produkter – en SaaS-plattform för
+          transportbranschen och en familjeapp nära release. Söker en
+          utvecklarroll där jag kan bidra med ren kod, stabil arkitektur och ett
+          lösningsorienterat mindset.
         </p>
         <div class="btns">
           <a href="#projects" class="btn btn-primary">🚀 Se mina projekt</a>
+          <a href="#contact" class="btn btn-outline">📫 Kontakta mig</a>
           <a
             href="https://github.com/surchii"
             target="_blank"
@@ -75,6 +82,20 @@
             class="btn btn-outline"
             >💻 GitHub</a
           >
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Fullstack-appar</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">YH-utbildningar</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">8+</span>
+            <span class="stat-label">Tekniker</span>
+          </div>
         </div>
       </div>
     </section>
@@ -85,14 +106,45 @@
         <div class="section-label">Bakgrund</div>
         <h2>Om mig</h2>
         <div class="divider"></div>
-        <p class="about-text">
-          Backend- och systemutvecklare med erfarenhet av både produktionsnära
-          system och nyutveckling. Arbetar dagligen med felsökning, systemanalys
-          och teknisk problemlösning i kundmiljö. Har byggt skalbara
-          backend-lösningar i Spring Boot samt mobilapplikationer i Flutter med
-          REST-integration. Söker nu en utvecklarroll där jag kan bidra med ren
-          kod, god arkitektur och ett lösningsorienterat mindset.
-        </p>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Fullstack-utvecklare med fokus på
+              <strong>Java, Spring Boot, React och Flutter</strong>. Jag har
+              byggt två kompletta fullstack-applikationer med JWT-autentisering,
+              rollbaserad åtkomst, REST-API:er och databasintegration.
+            </p>
+            <p>
+              Till vardags arbetar jag med systemförvaltning och teknisk
+              problemlösning i produktionsmiljö, vilket gett mig en djup
+              förståelse för hur system fungerar i verkligheten – från
+              felsökning till arkitekturbeslut.
+            </p>
+            <p>
+              Jag söker nu en utvecklarroll där jag kan använda min breda
+              tekniska kompetens och mitt driv att bygga lösningar som skapar
+              verkligt värde.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight">
+                <span class="highlight-icon">☕</span>
+                <span>Java & Spring Boot – min kärna</span>
+              </div>
+              <div class="highlight">
+                <span class="highlight-icon">⚛️</span>
+                <span>React & TypeScript – moderna webbgränssnitt</span>
+              </div>
+              <div class="highlight">
+                <span class="highlight-icon">📱</span>
+                <span>Flutter – cross-platform mobilappar</span>
+              </div>
+              <div class="highlight">
+                <span class="highlight-icon">🏗️</span>
+                <span>SaaS-arkitektur & multi-tenant system</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -100,56 +152,87 @@
     <section id="skills" class="section dark fade-in">
       <div class="container">
         <div class="section-label">Stack</div>
-        <h2>Teknisk profil</h2>
+        <h2>Teknisk kompetens</h2>
         <div class="divider"></div>
         <div class="skills-grid">
           <div class="skill-card">
-            <h3>Backend</h3>
+            <h3>☕ Backend</h3>
             <ul>
-              <li>Java (SE / EE)</li>
+              <li>Java 17 / 21</li>
               <li>Spring Boot</li>
+              <li>Spring Security</li>
               <li>REST API</li>
               <li>JPA / Hibernate</li>
+              <li>Maven</li>
+              <li>JUnit</li>
             </ul>
           </div>
           <div class="skill-card">
-            <h3>Frontend & Mobil</h3>
+            <h3>⚛️ Frontend</h3>
+            <ul>
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+              <li>Vite</li>
+              <li>HTML5 / CSS3</li>
+              <li>Vaadin</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>📱 Mobil</h3>
             <ul>
               <li>Flutter</li>
               <li>Dart</li>
-              <li>React</li>
+              <li>Bloc / Provider</li>
+              <li>Hive (offline)</li>
+              <li>Push-notifikationer</li>
             </ul>
           </div>
           <div class="skill-card">
-            <h3>Databaser</h3>
+            <h3>🗄️ Databaser</h3>
             <ul>
               <li>PostgreSQL</li>
               <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>H2 (test)</li>
             </ul>
           </div>
           <div class="skill-card">
-            <h3>Verktyg & Metodik</h3>
+            <h3>🔒 Säkerhet</h3>
             <ul>
-              <li>Git</li>
-              <li>Maven</li>
-              <li>Docker</li>
+              <li>JWT-autentisering</li>
+              <li>Spring Security</li>
+              <li>RBAC (rollbaserad åtkomst)</li>
+              <li>CORS-konfiguration</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>🛠️ Verktyg & Metodik</h3>
+            <ul>
+              <li>Git / GitHub</li>
+              <li>Docker / Docker Compose</li>
+              <li>Render (deploy)</li>
               <li>Scrum / Agilt</li>
+              <li>CI/CD</li>
             </ul>
           </div>
         </div>
 
-        <div style="margin-top: 40px">
+        <!-- Arkitektur -->
+        <div class="arch-section">
           <div class="section-label">Arbetssätt</div>
-          <h2 style="margin-bottom: 0.5rem">Arkitektur & Principer</h2>
+          <h2>Arkitektur & Principer</h2>
           <div class="divider"></div>
           <div class="arch-grid">
             <div class="arch-item">
               Lagerarkitektur (Controller → Service → Repository)
             </div>
             <div class="arch-item">REST-design enligt best practice</div>
-            <div class="arch-item">DTO-mapping & validering</div>
+            <div class="arch-item">DTO-mapping & inputvalidering</div>
             <div class="arch-item">Global exception handling</div>
-            <div class="arch-item">Refaktorering & teknisk skuld</div>
+            <div class="arch-item">JWT-baserad autentisering</div>
+            <div class="arch-item">Multi-tenant SaaS-arkitektur</div>
+            <div class="arch-item">E2E-testning med MockMvc</div>
             <div class="arch-item">Agilt arbetssätt (Scrum)</div>
           </div>
         </div>
@@ -162,48 +245,83 @@
         <div class="section-label">Portfolio</div>
         <h2>Utvalda projekt</h2>
         <div class="divider"></div>
+        <p class="section-subtitle">
+          🔒 Privata repos – demo, arkitektur och kodexempel visas gärna vid
+          förfrågan.
+          <a href="#contact" class="inline-link">Kontakta mig →</a>
+        </p>
+
         <div class="projects-grid">
           <!-- VILOTIDSAPP -->
           <div class="project-card featured">
             <div class="project-top">
               <h3>🚛 VilotidsApp</h3>
-              <span class="badge badge-live">Pågående</span>
+              <span class="badge badge-live">SaaS · Pågående</span>
             </div>
             <p class="project-meta">
-              Fullstack SaaS · Backend + Admin Web + Mobilapp
+              Fullstack SaaS-plattform · Monorepo · Backend + Admin Web +
+              Mobilapp
             </p>
             <div class="tech-stack">
-              <span>Java 17</span><span>Spring Boot</span
-              ><span>Spring Security</span><span>JWT</span> <span>Flutter</span
-              ><span>React</span><span>TypeScript</span><span>PostgreSQL</span>
+              <span>Java 17</span>
+              <span>Spring Boot</span>
+              <span>Spring Security</span>
+              <span>JWT</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Vite</span>
+              <span>Flutter</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
             </div>
             <p>
-              Fullstack SaaS-plattform för förarkompabilitet, vilotidskontroll
-              och administrativ hantering – byggd som ett monorepo med backend,
-              React-admindashboard och Flutter-mobilapp.
+              SaaS-plattform för transportbranschen som hjälper taxiföretag att
+              hantera förares vilotider och compliance enligt
+              Transportstyrelsens regelverk. Byggt som monorepo med tre separata
+              klienter.
             </p>
-            <ul class="project-details">
-              <li>
-                JWT-autentisering & rollbaserad åtkomstkontroll (Admin / Company
-                / Driver)
-              </li>
-              <li>Rule engine för vilotidsvalidering enligt regelverket</li>
-              <li>Compliance-beräkning per förare och företag</li>
-              <li>
-                Prenumerationshantering (BASIC / PRO / ENTERPRISE) med
-                drivergränser
-              </li>
-              <li>Schemalagda e-postpåminnelser (Spring Scheduler)</li>
-              <li>Audit logging & plattformsanalytik</li>
-              <li>Skalbar multi-tenant arkitektur</li>
-            </ul>
+
+            <div class="project-features">
+              <h4>Backend (Java Spring Boot)</h4>
+              <ul class="project-details">
+                <li>
+                  JWT-autentisering & rollbaserad åtkomstkontroll (Admin /
+                  Företag / Förare)
+                </li>
+                <li>Rule engine för vilotidsvalidering enligt regelverket</li>
+                <li>Compliance-beräkning per förare och företag</li>
+                <li>Prenumerationshantering (BASIC / PRO / ENTERPRISE)</li>
+                <li>Schemalagda e-postpåminnelser (Spring Scheduler)</li>
+                <li>Audit logging & plattformsanalytik</li>
+                <li>Skalbar multi-tenant arkitektur</li>
+              </ul>
+
+              <h4>Admin Dashboard (React + TypeScript)</h4>
+              <ul class="project-details">
+                <li>Plattformsdashboard med företagshantering</li>
+                <li>Förarstatistik och compliance-översikt</li>
+                <li>Audit-loggvisare och plattformsanalys</li>
+                <li>Rollbaserad åtkomstkontroll i UI</li>
+              </ul>
+
+              <h4>Mobilapp (Flutter)</h4>
+              <ul class="project-details">
+                <li>Förarinloggning och daglig aktivitetsregistrering</li>
+                <li>Compliance-kontrollvy</li>
+                <li>Historik och rapporter</li>
+                <li>Cross-platform (iOS, Android, Webb)</li>
+              </ul>
+            </div>
+
             <div class="project-links">
+              <a href="#contact" class="btn btn-outline btn-sm">
+                🔒 Begär demo
+              </a>
               <a
                 href="https://github.com/surchii"
                 target="_blank"
-                class="btn btn-outline"
-                style="font-size: 0.8rem; padding: 7px 14px"
-                >GitHub →</a
+                class="btn btn-outline btn-sm"
+                >💻 GitHub-profil</a
               >
             </div>
           </div>
@@ -211,32 +329,62 @@
           <!-- TINYSTEPS -->
           <div class="project-card featured">
             <div class="project-top">
-              <h3>🌟 TinySteps</h3>
-              <span class="badge badge-live">Pågående</span>
+              <h3>👶 TinySteps</h3>
+              <span class="badge badge-live">Nära release</span>
             </div>
-            <p class="project-meta">Backend Developer</p>
+            <p class="project-meta">
+              Fullstack · Flutter-app + Spring Boot Backend
+            </p>
             <div class="tech-stack">
-              <span>Java</span><span>Spring Boot</span><span>PostgreSQL</span
-              ><span>REST API</span>
+              <span>Java 21</span>
+              <span>Spring Boot</span>
+              <span>Spring Security</span>
+              <span>JWT</span>
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Bloc</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
+              <span>Hive</span>
             </div>
             <p>
-              Backend byggd i Spring Boot med tydlig lagerarkitektur och
-              REST-design. Implementerar DTO-mapping, validering, global
-              exception handling och PostgreSQL via JPA/Hibernate.
+              Familjeapp för föräldrar att följa barns dagliga rutiner och
+              utveckling. Komplett fullstack-applikation med Flutter-app och
+              Spring Boot backend, nära produktionsrelease.
             </p>
-            <ul class="project-details">
-              <li>Controller → Service → Repository</li>
-              <li>DTO-mappning & validering</li>
-              <li>Global exception handling</li>
-              <li>Skalbar struktur för vidareutveckling</li>
-            </ul>
+
+            <div class="project-features">
+              <h4>Flutter-app</h4>
+              <ul class="project-details">
+                <li>JWT-inloggning med offline-stöd (Hive)</li>
+                <li>State management med Bloc och Provider</li>
+                <li>Push-notifikationer</li>
+                <li>Flerspråkighet (Svenska / Engelska)</li>
+                <li>CSV/PDF-export av data</li>
+                <li>Bildgalleri med uppladdning</li>
+                <li>Familjehantering – flera vuxna delar data</li>
+              </ul>
+
+              <h4>Spring Boot Backend</h4>
+              <ul class="project-details">
+                <li>Java 21 med Spring Security och JPA</li>
+                <li>PostgreSQL i produktion, H2 för tester</li>
+                <li>Automatiserade E2E-tester med MockMvc</li>
+                <li>Galleri med filuppladdning och säkerhetskontroll</li>
+                <li>Dockeriserad med Docker Compose</li>
+                <li>Driftsatt på Render</li>
+              </ul>
+            </div>
+
             <div class="project-links">
+              <a href="#contact" class="btn btn-outline btn-sm">
+                🔒 Begär demo
+              </a>
               <a
                 href="https://github.com/surchii"
                 target="_blank"
-                class="btn btn-outline"
-                style="font-size: 0.8rem; padding: 7px 14px"
-                >GitHub →</a
+                class="btn btn-outline btn-sm"
+                >💻 GitHub-profil</a
               >
             </div>
           </div>
@@ -244,11 +392,15 @@
           <!-- TASK MANAGER -->
           <div class="project-card">
             <div class="project-top">
-              <h3>Task Manager API</h3>
+              <h3>✅ Task Manager API</h3>
+              <span class="badge badge-live">Klar</span>
             </div>
             <p class="project-meta">REST API · Eget projekt</p>
             <div class="tech-stack">
-              <span>Java</span><span>Spring Boot</span><span>MySQL</span>
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>MySQL</span>
+              <span>JPA</span>
             </div>
             <p>
               REST-API med full CRUD-funktionalitet och relationsdatabas.
@@ -256,40 +408,19 @@
               lagerarkitektur.
             </p>
             <ul class="project-details">
-              <li>CRUD-endpoints</li>
-              <li>Service-lager & validering</li>
-              <li>MySQL med JPA</li>
+              <li>CRUD-endpoints med validering</li>
+              <li>Service-lager & DTO-mapping</li>
+              <li>MySQL med JPA/Hibernate</li>
+              <li>Global exception handling</li>
             </ul>
             <div class="project-links">
               <a
                 href="https://github.com/surchii"
                 target="_blank"
-                class="btn btn-outline"
-                style="font-size: 0.8rem; padding: 7px 14px"
-                >GitHub →</a
+                class="btn btn-outline btn-sm"
+                >💻 GitHub</a
               >
             </div>
-          </div>
-
-          <!-- FLUTTER APP -->
-          <div class="project-card upcoming">
-            <div class="project-top">
-              <h3>🚧 Flutter Mobilapp</h3>
-              <span class="badge badge-wip">Under utveckling</span>
-            </div>
-            <p class="project-meta">Fullstack · Flutter + REST</p>
-            <div class="tech-stack">
-              <span>Flutter</span><span>Dart</span><span>REST API</span>
-            </div>
-            <p>
-              Mobilapplikation i Flutter med REST-integration via Dio, asynkrona
-              API-anrop och tydlig separation mellan UI och affärslogik.
-            </p>
-            <ul class="project-details">
-              <li>State management</li>
-              <li>API-integration med Dio</li>
-              <li>Separation av UI och logik</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -303,38 +434,130 @@
         <div class="divider"></div>
         <div class="exp-list">
           <div class="exp-card">
-            <h3>Produktspecialist</h3>
+            <div class="exp-header">
+              <h3>Systemutvecklare / IT-specialist</h3>
+              <span class="exp-company">Sokigo AB</span>
+            </div>
             <p class="exp-meta">Sundbyberg / Distans · Juni 2023 – Nuvarande</p>
             <ul>
-              <li>Felsökning i produktionsmiljö</li>
-              <li>Rotorsaksanalys av systemfel</li>
-              <li>Teknisk problemlösning & systemanalys</li>
-              <li>Samverkan med utvecklingsteam kring kodförbättringar</li>
-              <li>Direktkontakt med kund & kravförståelse</li>
+              <li>
+                Vidareutvecklar och förvaltar dokument- och
+                ärendehanteringssystemet Evolution
+              </li>
+              <li>
+                Felsöker tekniska problem i kundmiljö – både funktionella och
+                kodnära
+              </li>
+              <li>
+                Analyserar systemkonfigurationer och arbetsflöden för att
+                optimera prestanda
+              </li>
+              <li>
+                Samarbetar med kunder och interna team kring implementation och
+                systemförvaltning
+              </li>
+              <li>Arbetar agilt med Scrum</li>
             </ul>
           </div>
+
           <div class="exp-card">
-            <h3>IT-konsult</h3>
-            <p class="exp-meta">Nov 2022 – Juni 2023</p>
+            <div class="exp-header">
+              <h3>IT-konsult</h3>
+              <span class="exp-company">Framtiden AB → Sokigo AB</span>
+            </div>
+            <p class="exp-meta">Stockholm / Distans · Nov 2022 – Juni 2023</p>
             <ul>
-              <li>Implementation & teknisk konfiguration</li>
+              <li>
+                Konsultuppdrag med fokus på implementation och vidareutveckling
+                av Evolution
+              </li>
+              <li>Systemförvaltning och teknisk problemlösning</li>
               <li>Integration mellan system och kundmiljö</li>
-              <li>Felsökning och teknisk anpassning</li>
+            </ul>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-header">
+              <h3>Frontendutvecklare (LIA)</h3>
+              <span class="exp-company">Smodin Webbyrå AB</span>
+            </div>
+            <p class="exp-meta">Enköping / Distans · Mars 2022 – Juni 2022</p>
+            <ul>
+              <li>
+                Utvecklade användargränssnitt i projektet Trackson med React och
+                JavaScript
+              </li>
+              <li>Responsiv webbdesign med modern frontendstack</li>
+              <li>
+                Tekniker: React, JavaScript, Java, Spring Boot, Maven, MariaDB,
+                Docker, Git
+              </li>
+            </ul>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-header">
+              <h3>Systemutvecklare Java (LIA)</h3>
+              <span class="exp-company">Setpace AB</span>
+            </div>
+            <p class="exp-meta">Stockholm / Distans · Okt 2021 – Dec 2021</p>
+            <ul>
+              <li>Utvecklade AI-baserad konsultplattform AIBroker</li>
+              <li>Fullstack-utveckling med MERN-stack</li>
+              <li>Tekniker: Node.js, React, MongoDB, AWS</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- UTBILDNING -->
+    <section id="education" class="section fade-in">
+      <div class="container">
+        <div class="section-label">Utbildning</div>
+        <h2>Utbildningar</h2>
+        <div class="divider"></div>
+        <div class="edu-grid">
+          <div class="edu-card">
+            <div class="edu-year">2024–2025</div>
+            <h3>Hybridutveckling med Flutter</h3>
+            <p class="edu-school">Stockholms Tekniska Institut · 50 YH-poäng</p>
+            <p class="edu-desc">
+              Responsiva mobilappar med Dart och Flutter. UI, state management
+              och API-integration för iOS och Android.
+            </p>
+          </div>
+          <div class="edu-card">
+            <div class="edu-year">2022–2023</div>
+            <h3>Microservices with Spring Boot</h3>
+            <p class="edu-school">YrkesAkademin · 60 YH-poäng</p>
+            <p class="edu-desc">
+              Skalbara microservices i Java med Spring Boot. REST API, JPA,
+              Docker och molnredo arkitektur.
+            </p>
+          </div>
+          <div class="edu-card">
+            <div class="edu-year">2020–2022</div>
+            <h3>Systemutvecklare Java</h3>
+            <p class="edu-school">Newton Yrkeshögskola · 400 YH-poäng</p>
+            <p class="edu-desc">
+              Objektorienterad programmering i Java. Spring Boot, Vaadin, Maven,
+              JUnit, MySQL, Git. Agila team och Scrum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- KONTAKT -->
-    <section id="contact" class="section fade-in">
+    <section id="contact" class="section dark fade-in">
       <div class="container">
         <div class="section-label">Hör av dig</div>
         <h2>Kontakt</h2>
         <div class="divider"></div>
-        <p style="color: var(--muted); margin-bottom: 1.5rem; max-width: 500px">
-          Intresserad av att anställa eller samarbeta? Hör gärna av dig – jag
-          svarar snabbt.
+        <p class="section-subtitle">
+          Intresserad av att samarbeta eller vill se en demo av mina projekt?
+          Hör gärna av dig – jag svarar snabbt.
         </p>
         <div class="contact-grid">
           <a href="mailto:ahmed.nebi@hotmail.com" class="contact-item">
@@ -375,7 +598,12 @@
     <!-- FOOTER -->
     <footer>
       <div class="container">
-        <p>© 2026 Ahmed Nebi — <span>Built with Java & Flutter</span></p>
+        <p>
+          © 2025 Ahmed Nebi —
+          <span
+            >Fullstack-utvecklare · Java · Spring Boot · React · Flutter</span
+          >
+        </p>
       </div>
     </footer>
 
