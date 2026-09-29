@@ -478,8 +478,11 @@ nav .inner {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 0.5rem;
-  flex-wrap: wrap;
-  gap: 8px;
+  gap: 12px;
+}
+
+.project-top .badge {
+  flex-shrink: 0;
 }
 
 .project-card h3 {
@@ -741,17 +744,26 @@ footer span {
 /* =========================
    SCROLL FADE IN
 ========================= */
-.fade-in {
+/* Only hide content when JS is running, so the page is readable without it */
+.js .fade-in {
   opacity: 0;
-  transform: translateY(24px);
+  transform: translateY(16px);
   transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
+    opacity 0.4s ease,
+    transform 0.4s ease;
 }
 
-.fade-in.visible {
+.js .fade-in.visible {
   opacity: 1;
   transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 /* =========================

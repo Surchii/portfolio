@@ -28,6 +28,9 @@
       content="https://surchii.github.io/portfolio/assets/preview.png"
     />
 
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <title>Ahmed Nebi | Fullstack-utvecklare</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
@@ -85,8 +88,8 @@
         </div>
         <div class="hero-stats">
           <div class="stat">
-            <span class="stat-number">2</span>
-            <span class="stat-label">Fullstack-appar</span>
+            <span class="stat-number">4</span>
+            <span class="stat-label">Fullstack-projekt</span>
           </div>
           <div class="stat">
             <span class="stat-number">3+</span>
@@ -396,25 +399,29 @@
               <span class="badge badge-live">Klar</span>
             </div>
             <p class="project-meta">
-              Fullstack · Flutter + Dart + Firebase · Skolprojekt
+              Fullstack · Dart + Flutter + egen REST-backend · Skolprojekt
             </p>
             <div class="tech-stack">
-              <span>Flutter</span>
               <span>Dart</span>
-              <span>Firebase</span>
-              <span>Bloc</span>
+              <span>Flutter</span>
+              <span>Shelf</span>
+              <span>ObjectBox</span>
+              <span>REST API</span>
+              <span>Provider</span>
+              <span>Docker</span>
             </div>
             <p>
-              Komplett parkeringsapplikation med separata gränssnitt för
-              användare och administratörer. Byggd med Flutter och Firebase som
-              backend.
+              Komplett parkeringssystem med egenbyggd REST-backend i Dart och
+              separata klienter för användare, administratörer och terminal.
+              Uppbyggt som monorepo med delade modeller.
             </p>
             <ul class="project-details">
-              <li>Användarapp – hantera fordon, parkeringar och historik</li>
-              <li>Adminapp – hantera parkeringsplatser och användare</li>
-              <li>State management med Bloc</li>
-              <li>Firebase för realtidsdata och autentisering</li>
-              <li>Tydlig separation av logik och UI</li>
+              <li>REST-API med Shelf – CRUD för personer, fordon, platser och parkeringar</li>
+              <li>ObjectBox som databas med delade modeller mellan server och klienter</li>
+              <li>Adminapp (Flutter) – parkeringsplatser, aktiva parkeringar och statistik</li>
+              <li>Användarapp (Flutter) – hantera fordon och parkeringar</li>
+              <li>CLI-klient och repository-lager ovanpå HTTP</li>
+              <li>Dockeriserad server</li>
             </ul>
             <div class="project-links">
               <a
@@ -642,7 +649,7 @@
     <footer>
       <div class="container">
         <p>
-          © 2025 Ahmed Nebi —
+          © <span id="year">2026</span> Ahmed Nebi —
           <span
             >Fullstack-utvecklare · Java · Spring Boot · React · Flutter</span
           >
