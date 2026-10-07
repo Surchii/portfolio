@@ -70,8 +70,8 @@
         </h1>
         <p>
           Jag bygger kompletta applikationer från backend till mobil. Just nu
-          utvecklar jag två fullstack-produkter – en SaaS-plattform för
-          transportbranschen och en familjeapp nära release. Söker en
+          har jag en egen familjeapp publicerad på Google Play och bygger en
+          SaaS-plattform för transportbranschen. Söker en
           utvecklarroll där jag kan bidra med ren kod, stabil arkitektur och ett
           lösningsorienterat mindset.
         </p>
@@ -114,8 +114,9 @@
             <p>
               Fullstack-utvecklare med fokus på
               <strong>Java, Spring Boot, React och Flutter</strong>. Jag har
-              byggt två kompletta fullstack-applikationer med JWT-autentisering,
-              rollbaserad åtkomst, REST-API:er och databasintegration.
+              byggt kompletta fullstack-applikationer med JWT-autentisering,
+              rollbaserad åtkomst, REST-API:er och databasintegration – och
+              tagit en av dem hela vägen till Google Play.
             </p>
             <p>
               Till vardags arbetar jag med systemförvaltning och teknisk
@@ -255,6 +256,81 @@
         </p>
 
         <div class="projects-grid">
+          <!-- KidoSteps -->
+          <div class="project-card featured">
+            <div class="project-top">
+              <h3>👶 KidoSteps</h3>
+              <span class="badge badge-live">Publicerad på Google Play</span>
+            </div>
+            <p class="project-meta">
+              Fullstack · Flutter + Spring Boot · Ensam utvecklare – från idé
+              till Play Butik
+            </p>
+            <div class="tech-stack">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>BLoC</span>
+              <span>Java 21</span>
+              <span>Spring Boot 3.5</span>
+              <span>Spring Security</span>
+              <span>JWT</span>
+              <span>PostgreSQL</span>
+              <span>Flyway</span>
+              <span>Google Play Billing</span>
+              <span>Cloudflare</span>
+              <span>GitHub Actions</span>
+            </div>
+            <p>
+              Ett lugnt verktyg för föräldrar att logga matning, sömn och
+              tillväxt och dela det med familjen. Publicerad på Google Play i
+              178 länder – byggd, driftsatt och släppt helt på egen hand.
+            </p>
+
+            <div class="project-features">
+              <h4>Flutter-app (Android + webb)</h4>
+              <ul class="project-details">
+                <li>Matning, sömn, tillväxt, vaccinationer, aktiviteter och statistik</li>
+                <li>Familjedelning – flera vuxna följer samma barn</li>
+                <li>State management med BLoC, offline-stöd med Hive</li>
+                <li>Svenska och engelska, påminnelser och CSV/PDF-export</li>
+                <li>Premium via Google Play Billing – delas i hela familjen</li>
+              </ul>
+
+              <h4>Backend & drift</h4>
+              <ul class="project-details">
+                <li>Java 21, Spring Boot 3.5, PostgreSQL med Flyway-migreringar</li>
+                <li>JWT-autentisering och köpverifiering mot Google Play på servern</li>
+                <li>Drift i EU: Render och Supabase i Frankfurt, Cloudflare R2 och Pages</li>
+                <li>CI med GitHub Actions, integrationstester med Testcontainers</li>
+                <li>Nattliga krypterade backuper och extern driftövervakning</li>
+              </ul>
+
+              <h4>Integritet & release</h4>
+              <ul class="project-details">
+                <li>GDPR: data i EU, samtycke för hälsodata, integritetspolicy och kontoradering</li>
+                <li>Stängt test med 12 testare i 14 dagar innan Googles granskning</li>
+                <li>Löste avslag och releasekrav – behörigheter, R8 och en krasch inför lansering</li>
+              </ul>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.kidosteps.app"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary btn-sm"
+                >▶ Google Play</a
+              >
+              <a
+                href="https://kidosteps.com"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-outline btn-sm"
+                >🌐 kidosteps.com</a
+              >
+            </div>
+          </div>
+
           <!-- VILOTIDSAPP -->
           <div class="project-card featured">
             <div class="project-top">
@@ -329,68 +405,6 @@
             </div>
           </div>
 
-          <!-- KidoSteps -->
-          <div class="project-card featured">
-            <div class="project-top">
-              <h3>👶 KidoSteps</h3>
-              <span class="badge badge-live">Nära release</span>
-            </div>
-            <p class="project-meta">
-              Fullstack · Flutter-app + Spring Boot Backend
-            </p>
-            <div class="tech-stack">
-              <span>Java 21</span>
-              <span>Spring Boot</span>
-              <span>Spring Security</span>
-              <span>JWT</span>
-              <span>Flutter</span>
-              <span>Dart</span>
-              <span>Bloc</span>
-              <span>PostgreSQL</span>
-              <span>Docker</span>
-              <span>Hive</span>
-            </div>
-            <p>
-              Familjeapp för föräldrar att följa barns dagliga rutiner och
-              utveckling. Komplett fullstack-applikation med Flutter-app och
-              Spring Boot backend, nära produktionsrelease.
-            </p>
-
-            <div class="project-features">
-              <h4>Flutter-app</h4>
-              <ul class="project-details">
-                <li>JWT-inloggning med offline-stöd (Hive)</li>
-                <li>State management med Bloc och Provider</li>
-                <li>Push-notifikationer</li>
-                <li>Flerspråkighet (Svenska / Engelska)</li>
-                <li>CSV/PDF-export av data</li>
-                <li>Bildgalleri med uppladdning</li>
-                <li>Familjehantering – flera vuxna delar data</li>
-              </ul>
-
-              <h4>Spring Boot Backend</h4>
-              <ul class="project-details">
-                <li>Java 21 med Spring Security och JPA</li>
-                <li>PostgreSQL i produktion, H2 för tester</li>
-                <li>Automatiserade E2E-tester med MockMvc</li>
-                <li>Galleri med filuppladdning och säkerhetskontroll</li>
-                <li>Dockeriserad med Docker Compose</li>
-                <li>Driftsatt på Render</li>
-              </ul>
-            </div>
-
-            <div class="project-links">
-              <a href="#contact" class="btn btn-outline btn-sm">
-                🔒 Begär demo
-              </a>
-              <a
-                href="https://github.com/surchii"
-                target="_blank"
-                class="btn btn-outline btn-sm"
-                >💻 GitHub-profil</a
-              >
-            </div>
-          </div>
 
           <!-- PARKING APP -->
           <div class="project-card">
